@@ -40,7 +40,7 @@ composer require inertiajs/inertia-laravel
 ```
 php artisan inertia:middleware
 ```
-### and add inertia middleware to bootstrap/app.php file.
+### and add inertia middleware to app/Http/Kernel.php file.
 ```
 ...
     protected $middlewareGroups = [
@@ -51,7 +51,7 @@ php artisan inertia:middleware
     ]
 ...
 ```
-### Create Drawer Pages and Shared in resource/js/ and in this folder create Welcome.vue component in Pages and Layout in Shared folder
+### Create Folder Pages and Shared in resource/js/ and in this folder create Welcome.vue component in Pages and Layout in Shared folder
 
 ### Layout.vue
 ```
