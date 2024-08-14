@@ -22,3 +22,12 @@ Route::get('/', function () {
     ];
     return Inertia::render('Welcome', ['page' => $page]);
 });
+
+Route::get('/reactive', function () {
+    sleep(1); // Inertia Progressbar - Test delay;
+    $page = [
+        'title'    => 'Reactive.vue',
+        'subtitle' => 'reactivity test counter'
+    ];
+    return Inertia::render('Reactive', ['page' => $page]);
+});

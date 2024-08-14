@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],  // font-inter
+        matemasie: ['Matemasie', 'sans-serif'],  // font-matemasie
       },
     },
   },

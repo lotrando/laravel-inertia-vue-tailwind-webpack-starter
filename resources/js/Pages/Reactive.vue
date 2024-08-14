@@ -13,15 +13,34 @@
         <p class="font-inter text-gray-200 dark:text-gray-500">
           {{ page.subtitle }}
         </p>
+        <h2 class="m-5 text-5xl text-amber-400 font-matemasie">
+          {{ count }}
+        </h2>
+        <Counter
+          @counter-increased="increment"
+          @counter-decreased="decrement"
+          class="mt-5"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import Counter from "../Shared/Counter.vue";
+import { ref } from "vue";
+const count = ref(0);
+
 defineProps({
   page: Object,
 });
+
+const increment = () => {
+  count.value++;
+};
+const decrement = () => {
+  count.value--;
+};
 </script>
 
 <style>
