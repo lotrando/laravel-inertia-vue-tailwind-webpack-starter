@@ -17,8 +17,8 @@ use Inertia\Inertia;
 Route::get('/', function () {
     sleep(1); // Inertia Progressbar - Test delay;
     $page = [
-        'title'    => 'Welcome.vue',
-        'subtitle' => 'page in persistent Layout as slot'
+        'title'    => 'Welcome',
+        'subtitle' => 'welcome.vue page in persistent Layout as slot'
     ];
     return Inertia::render('Welcome', ['page' => $page]);
 });
@@ -26,8 +26,8 @@ Route::get('/', function () {
 Route::get('/reactive', function () {
     sleep(1); // Inertia Progressbar - Test delay;
     $page = [
-        'title'    => 'Reactive.vue',
-        'subtitle' => 'reactivity test counter'
+        'title'    => 'Reactivity test',
+        'subtitle' => 'reactive.vue page with test counter'
     ];
     return Inertia::render('Reactive', ['page' => $page]);
 });
